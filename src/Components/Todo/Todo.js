@@ -10,7 +10,6 @@ export default function Todo(props) {
           border: "2px solid black",
           width: "500px",
           padding: "20px",
-          overflow: "scroll",
           "text-align": "left",
         }}
       >

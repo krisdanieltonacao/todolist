@@ -6,15 +6,16 @@ export default function Todo(props) {
     <div>
       <Alert
         style={{
-          "background-color": "lightblue",
+          "background-color": "yellow",
           border: "2px solid black",
-          padding: "5px",
-          width: "25%",
+          width: "500px",
+          padding: "20px",
+          overflow: "scroll",
+          "text-align": "left",
         }}
       >
         {props.data}
       </Alert>
-      <br></br>
     </div>
   );
 }

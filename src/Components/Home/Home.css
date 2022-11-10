@@ -1,18 +1,21 @@
-.mainHome{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(4, 4, 139);
+.mainHome {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(4, 4, 139);
+  position: absolute;
 }
-.headingHome{
-    font-family: Tahoma, sans-serif;
-    color:yellow;
-    position:absolute;
-    top:40%;
-    left:35%;
+.headingHome {
+  font-family: Tahoma, sans-serif;
+  color: yellow;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
 }
-.getStartedBtn{
-    font-size: 18px;
-    position:absolute;
-    top: 52%;
-    left: 48%;
+.getStartedBtn {
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }

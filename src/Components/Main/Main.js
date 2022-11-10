@@ -26,56 +26,61 @@ export default function Main() {
     setItems([]);
   }
   return (
-    <div className="main">
+    <div className="mainDiv">
       <h1 className="mainHeading"> What is on the calendar today?</h1>
-      <Box
-        sx={{
-          width: 500,
-          maxWidth: "100%",
-        }}
-        className="inputMain"
-      >
-        <TextField
-          fullWidth
-          label="New Entry"
-          id="fullWidth"
-          onChange={(e) => {
-            setItem(e.target.value);
+      <div className="textArea">
+        <Box
+          sx={{
+            width: 500,
+            maxWidth: "100%",
           }}
-        />
-      </Box>
+          className="inputMain"
+        >
+          <TextField
+            fullWidth
+            label="New Entry"
+            id="fullWidth"
+            onChange={(e) => {
+              setItem(e.target.value);
+            }}
+          />
+        </Box>
+      </div>
       <Button
         variant="contained"
-        style={{ position: "absolute", top: "32%", left: "43%" }}
         onClick={() => {
           addItem(item);
         }}
+        className="addBtn"
       >
         ADD
       </Button>
       <Button
         variant="contained"
         color="error"
-        style={{ position: "absolute", top: "37%", left: "43%" }}
         onClick={() => {
           deleteAllItems();
         }}
+        className="deleteAllBtn"
       >
         Delete All
       </Button>
+
       <div className="items">
         {items.map((item, index) => {
           return (
-            <>
+            <div className="itemArea">
               <Todo data={item} />
               <Button
+                variant="contained"
+                color="error"
                 onClick={() => {
                   deleteItem(index);
                 }}
               >
                 DELETE
               </Button>
-            </>
+            </div>
           );
         })}
       </div>

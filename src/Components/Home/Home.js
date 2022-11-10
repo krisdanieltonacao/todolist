@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
   return (
-    <div className="mainHome">
+    <div className="mainHome container-fluid">
       <h1 className="headingHome">Welcome to my TODO List App!</h1>
       <Button
         variant="light"

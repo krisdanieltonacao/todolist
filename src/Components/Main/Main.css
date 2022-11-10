@@ -35,12 +35,12 @@
   top: 60%;
   transform: translate(-50%, -50%);
   height: 50%;
-  overflow: scroll;
-  scroll-behaviour: smooth;
+  overflow-x: scroll;
 }
 .itemArea {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   overflow-y: scroll;
+  scroll-behaviour: smooth;
 }

@@ -1,0 +1,18 @@
+.mainHome{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 4, 139);
+}
+.headingHome{
+    font-family: Tahoma, sans-serif;
+    color:yellow;
+    position:absolute;
+    top:40%;
+    left:35%;
+}
+.getStartedBtn{
+    font-size: 18px;
+    position:absolute;
+    top: 52%;
+    left: 48%;
+}
